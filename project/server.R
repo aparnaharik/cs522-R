@@ -70,7 +70,7 @@ shinyServer(function(input, output) {
     #Render Bar Plot
     output$statsPlot <- renderPlot({
       stat.data <- arrange_(state.statistics, c(input$variable))
-      par(mfrow = c(1, 1), mar = c(1, 5, 4, 1), oma = c(2,3,2,3))
+      par(mfrow = c(1, 1), mar = c(4, 5, 1, 1), oma = c(2,3,2,3))
       barplot(stat.data[, input$variable],
                   horiz = TRUE,
                   names.arg = stat.data$State,

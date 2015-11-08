@@ -30,8 +30,8 @@ shinyUI(navbarPage("India Demography App",
                          sidebarLayout(
                            sidebarPanel(
                              selectInput("variable", "Demographic Factor:",
-                                         c("Population" = "Population",
-                                           "Exponential Growth Rate" = "Exponential.Growth.Rate",
+                                         c("Population (in 1000's)" = "Population",
+                                           "Population Growth Rate" = "Exponential.Growth.Rate",
                                            "Literacy Rate (Female 7+)" = "Literacy.Rate.Female.7.",
                                            "Sex Ratio (Female per 1000 Male)" = "Sex.Ratio",
                                            "Sex Ratio (0-6years)" = "Sex.Ratio.1",
